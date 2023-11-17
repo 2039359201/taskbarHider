@@ -13,7 +13,7 @@ void RemoveTrayIcon(HWND hwnd);
 
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
-int main()
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
     WNDCLASSW windowClass = {0};
     windowClass.lpfnWndProc = WindowProc;
